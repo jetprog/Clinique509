@@ -1,0 +1,57 @@
+﻿<Window x:Class="com.crefima.clinique509.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:mdi="clr-namespace:WPF.MDI;assembly=WPF.MDI"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow"  WindowStartupLocation="CenterScreen" 
+        Height="650" Width="800" 
+        MaxHeight="650" MaxWidth="800" >
+    <Grid Background="Blue">
+
+        <Menu>
+            <MenuItem Header="Authentification">
+                <MenuItem Header="Connecter" Name="BT_Connection" />
+                <MenuItem Header="Deconnecter" Name="BT_Deconnection"/>
+                <MenuItem Header="Quitter" Name="BT_Quiter" />
+            </MenuItem>
+            <MenuItem Header="Patient" Name="BT_Patient">
+                <MenuItem Header="Enregistrer" Name="BT_save" Click="BT_save_Click" />
+                <MenuItem Header="Modifier" Name="BT_ModifierPatient" Click="BT_ModifierPatient_Click" />
+                <MenuItem Header="Rechercher" Name="BT_SearchPatient" Click="BT_SearchPatient_Click" />
+                <MenuItem Header="Lister" Name="BT_ListPatient" Click="BT_ListPatient_Click"/>
+            </MenuItem>
+            <MenuItem Header="Visite">
+                <MenuItem Header="Enregister" Name="BT_SaveVisite" Click="BT_SaveVisite_Click" />
+                <MenuItem Header="Modifier" Name="BT_ModifierVisite" Click="BT_ModifierVisite_Click"/>
+                <MenuItem Header="Rechercher" Name="BT_RechercherVisite" Click="BT_RechercherVisite_Click"/>
+                <MenuItem Header="Lister" Name="BT_ListerVisite" Click="BT_ListerVisite_Click"/>
+            </MenuItem>
+            <MenuItem Header="Ordonnance">
+                <MenuItem Header="Laboratoire">
+                        <MenuItem Header="Faire une ordonnance" Name="BT_MakeLabOrder" Click="BT_MakeLabOrder_Click" />
+                        <MenuItem Header="Rechercher ordonnance" Name="BT_SearchLabOrder" />
+                </MenuItem>
+                <MenuItem Header="Medicale">
+                    <MenuItem Header="Faire une ordonnance" Name="BT_SaveDrugOrder" Click="BT_SaveDrugOrder_Click"/>
+                    <MenuItem Header="Rechercher ordonnance" Name="BT_SearchDrugOrder" />
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Avances" >
+                <MenuItem Header="Creer Utilisateur" Name="BT_CreerUser" />
+                <MenuItem Header="Modifier Utilisateur" Name="BT_ModifierUser" />
+                <MenuItem Header="Lister Utilisateur" Name="BT_ListerUser" />
+            </MenuItem>
+        </Menu>
+
+        <DockPanel >
+            <mdi:MdiContainer Theme="Aero" DockPanel.Dock="Top" Background="White" Margin="0 20 0 0" Name="MainMdiContainer"></mdi:MdiContainer>
+           
+            <!--<mdi:MdiContainer>
+                <mdi:MdiContainer.Background>
+                    <ImageBrush  Stretch="Fill" TileMode="None" />
+                </mdi:MdiContainer.Background>
+            </mdi:MdiContainer>-->
+        </DockPanel>
+
+
+    </Grid>
+</Window>

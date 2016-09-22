@@ -1,0 +1,20 @@
+﻿Clinique509
+
+
+winexe
+C#
+.cs
+C:\Users\SET JETRO\Documents\Visual Studio 2010\Projects\Clinique509\Clinique509\obj\x86\Debug\
+com.crefima.clinique509
+none
+false
+DEBUG;TRACE
+C:\Users\SET JETRO\Documents\Visual Studio 2010\Projects\Clinique509\Clinique509\App.xaml
+11197831440
+
+161923096351
+131051379981
+MainWindow.xaml;ui\FenDrugOrder.xaml;ui\FenLabOrder.xaml;ui\FenListePatient.xaml;ui\FenListeVisite.xaml;ui\FenModifierPatient.xaml;ui\FenModifierVisite.xaml;ui\FenRechercherVisite.xaml;ui\FenSavePatient.xaml;ui\FenSaveVisite.xaml;ui\FenSearchPatient.xaml;
+
+False
+
